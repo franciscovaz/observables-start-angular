@@ -16,7 +16,6 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.activatedSub = this.userService.activatedEmitter.subscribe(didActivate => {
       this.userActivated = didActivate;
-      //just coment
     })
   }
 
